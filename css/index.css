@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(185,185,185,1) 100%);
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.inner-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#h1-artist {
+    font-size: 5em;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin: 10px;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: #cbcbcb;
+    padding: 15px;
+    min-width: 90%;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    background-color: #471e77;
+    border-radius: 7px;
+}
+
+.list-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
