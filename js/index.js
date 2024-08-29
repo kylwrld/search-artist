@@ -12,9 +12,13 @@ const getTopTracks = async (artist) => {
 document.getElementById("form").addEventListener("submit", async (e) => {
     e.preventDefault()
     const artist = e.target[0].value
+    if (artist === '') {
+        return document.getElementById("result").innerHTML = ''
+    }
     const result = await getTopTracks(artist)
     const tracks = result["toptracks"]["track"]
     const list = document.getElementById("result")
+    list.innerHTML = ''
     tracks.forEach(element => {
         let div = document.createElement("div");
         div.classList.add("list-item")
